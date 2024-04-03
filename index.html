@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wordle</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="wordlist.js" defer></script>
+    <script src="styles.js" defer></script>
+    <script src="script.js" type="module" defer></script>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="warn"></div>
+    <div class="endscreen" id="endscreen">
+        <h1></h1>
+        <p class="message"></p>
+        <div class="statboxes">
+            <div class="big">
+                <h2>WINS</h2>
+                <h1 class="wins"></h1>
+            </div>
+            <div class="big">
+                <h2>LOSES</h2>
+                <h1 class="loses"></h1>
+            </div>
+            <div class="big">
+                <h2>STREAK</h2>
+                <h1 class="streak"></h1>
+            </div>
+        </div>
+        <div class="stats">
+            <div class="stat">1<div class="progbar" value="0" max="0" display="number"></div></div>
+            <div class="stat">2<div class="progbar" value="0" max="0" display="number"></div></div>
+            <div class="stat">3<div class="progbar" value="0" max="0" display="number"></div></div>
+            <div class="stat">4<div class="progbar" value="0" max="0" display="number"></div></div>
+            <div class="stat">5<div class="progbar" value="0" max="0" display="number"></div></div>
+            <div class="stat">6<div class="progbar" value="0" max="0" display="number"></div></div>
+        </div>
+        <button id="otherpojects">See my other projects</button><button id="playagian">Play Again</button>
+    </div>
+    <div class="maincontainer">
+        <div class="customwordle">
+            <h1>Wordle</h1>
+            <p>Made by <a href="https://justwhatever.net">JustWhatever</a></p>
+            <p>Make a <a href="/custom.html">CUSTOM WORDLE</a></p>
+            <div class="playingarea" id="playingarea"></div>
+            <div class="keyboard" id="keyboard">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
